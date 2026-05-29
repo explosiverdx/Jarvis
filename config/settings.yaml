@@ -1,0 +1,73 @@
+# Jarvis Configuration File
+# Customize these settings to fit your needs
+
+voice:
+  # Voice recognition engine: 'google', 'azure', 'whisper'
+  engine: google
+  # Language code for voice recognition
+  language: en-US
+  # Speech rate in words per minute
+  rate: 150
+  # Volume level (0.0 - 1.0)
+  volume: 0.9
+  # Microphone device index (-1 for default)
+  microphone_index: -1
+
+nlp:
+  # Confidence threshold for intent matching (0.0 - 1.0)
+  confidence_threshold: 0.6
+  # Language for NLP processing
+  language: en
+  # Enable spell correction
+  spell_correction: true
+
+logging:
+  # Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: INFO
+  # Log file location
+  file: ~/.jarvis/jarvis.log
+  # Enable console output
+  console: true
+
+automation:
+  # Enable automation tasks
+  enabled: true
+  # Maximum concurrent tasks
+  max_tasks: 100
+  # Enable task scheduler
+  scheduler_enabled: true
+
+memory:
+  # Storage backend: 'sqlite', 'redis'
+  storage: sqlite
+  # Database path
+  db_path: ~/.jarvis/memory.db
+  # Memory retention (days)
+  retention_days: 30
+
+plugins:
+  # Enable plugin system
+  enabled: true
+  # Plugin directory
+  plugin_dir: ~/.jarvis/plugins
+  # Auto-load plugins on startup
+  auto_load: true
+
+api:
+  # API settings
+  openai_enabled: false
+  # openai_api_key: your_key_here
+  
+  weather_enabled: false
+  # weather_api_key: your_key_here
+  
+  web_search_enabled: false
+  # search_api_key: your_key_here
+
+user:
+  # User name (how Jarvis addresses you)
+  name: User
+  # User location (for weather, etc.)
+  location: New York
+  # User timezone
+  timezone: America/New_York

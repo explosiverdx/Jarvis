@@ -1,0 +1,57 @@
+{
+  "greeting": {
+    "patterns": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"],
+    "responses": ["Hello! How can I assist you?", "Hi there! What do you need?", "Hey! What can I help with?"],
+    "intent": "greeting"
+  },
+  "goodbye": {
+    "patterns": ["goodbye", "bye", "see you", "exit", "quit", "stop jarvis"],
+    "responses": ["Goodbye! Have a great day!", "See you later!", "Bye! Talk to you soon!"],
+    "intent": "goodbye"
+  },
+  "time": {
+    "patterns": ["what time", "tell me time", "current time", "time is it", "what's the time"],
+    "responses": ["Let me check the time for you"],
+    "intent": "get_time"
+  },
+  "date": {
+    "patterns": ["what date", "today's date", "current date", "day is it", "what's today"],
+    "responses": ["Let me tell you today's date"],
+    "intent": "get_date"
+  },
+  "weather": {
+    "patterns": ["weather", "temperature", "forecast", "rain", "sunny", "cloudy", "cold", "hot"],
+    "responses": ["Let me check the weather for you"],
+    "intent": "weather"
+  },
+  "reminder": {
+    "patterns": ["remind", "reminder", "set reminder", "remember", "don't forget"],
+    "responses": ["I'll set a reminder for you"],
+    "intent": "set_reminder"
+  },
+  "search": {
+    "patterns": ["search", "find", "look up", "google", "tell me about"],
+    "responses": ["Let me search that for you"],
+    "intent": "web_search"
+  },
+  "help": {
+    "patterns": ["help", "what can you do", "help me", "assist", "capabilities"],
+    "responses": ["I can help you with many things"],
+    "intent": "show_help"
+  },
+  "news": {
+    "patterns": ["news", "headlines", "current events", "latest news"],
+    "responses": ["Let me fetch the latest news for you"],
+    "intent": "get_news"
+  },
+  "joke": {
+    "patterns": ["joke", "tell me a joke", "make me laugh", "funny"],
+    "responses": ["Let me tell you a joke"],
+    "intent": "tell_joke"
+  },
+  "calendar": {
+    "patterns": ["calendar", "schedule", "meeting", "appointment", "event"],
+    "responses": ["Let me check your calendar"],
+    "intent": "manage_calendar"
+  }
+}
